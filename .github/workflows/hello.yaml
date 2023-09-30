@@ -8,15 +8,15 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - name: Download node for Javascript
-        run: sudo apt update && sudo apt install -y nodejs && sudo apt install -y npm
-      - run: echo "node has been installed" 
+      #- name: Download node for Javascript
+      #  run: sudo apt update && sudo apt install -y nodejs && sudo apt install -y npm
+      #- run: echo "node has been installed" 
       
       - name: Start script
         run: |
           pwd
           ls -la
-          echo "console.log("Hello, GitHub Actions!" > hello.js
+          echo "console.log("Hello, GitHub Actions!)" > hello.js
           chmod +x hello.js
           node hello.js
           echo "Script executed successfully"
