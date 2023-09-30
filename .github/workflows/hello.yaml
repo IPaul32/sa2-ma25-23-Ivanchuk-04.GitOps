@@ -2,7 +2,7 @@ name: Test script
 on: 
   push: 
     branches:
-    -master
+    - master
 
 jobs:
   prepare:
