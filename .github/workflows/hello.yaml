@@ -14,8 +14,8 @@ jobs:
       
       - name: Start script
         run: |
-          node hello.js > console.log
-	  touch /tmp/exit_scropt.log
+          node hello.js >> console.log
+	  touch /tmp/exit_script.log
 	  ls -la
  
       - name: Upload command output
