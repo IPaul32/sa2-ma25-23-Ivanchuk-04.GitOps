@@ -16,7 +16,7 @@ jobs:
         run: |
           pwd
           ls -la
-          node /home/04.GitOps/repo/hello.js > console.log
+          node hello.js > console.log
           touch /tmp/exit_script.log
           ls -la
  
