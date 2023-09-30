@@ -12,7 +12,7 @@ jobs:
         run: sudo apt update && sudo apt install -y nodejs
       - run: echo "node has been installed" 
       
-       name: Start script
+      - name: Start script
         run: |
           node hello.js > console.log
 	  touch /tmp/exit_scropt.log
