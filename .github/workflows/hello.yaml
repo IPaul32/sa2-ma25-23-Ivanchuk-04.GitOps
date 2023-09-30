@@ -14,9 +14,13 @@ jobs:
       
       - name: Start script
         run: |
-          pwd
+          echo "Current dirrectory: $(pwd)"
+          echo "Contetnts in the curent directory:"
           ls -la
+          echo "Start script and send log"
+          chmod +x hello.js
           node hello.js > console.log
+          echo "Script executed successfully"
           touch /tmp/exit_script.log
           ls -la
  
