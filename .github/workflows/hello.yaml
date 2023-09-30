@@ -16,7 +16,7 @@ jobs:
         run: |
           pwd
           ls -la
-          echo "console.log("Hello, GitHub Actions!)" > hello.js
+          echo "console.log("Hello, GitHub Actions!")" > hello.js
           chmod +x hello.js
           node hello.js
           echo "Script executed successfully"
