@@ -8,17 +8,18 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - name: "Download node for Javascript"
+      - name: Download node for Javascript
         run: sudo apt update && sudo apt install -y nodejs
       - run: echo "node has been installed" 
       
-       name: "Start script"
+       name: Start script
         run: |
           node hello.js > console.log
 	  touch /tmp/exit_scropt.log
-	  la -la 
-      - name: "Upload command output"
-        uses: "actions/upload-artifact@v2"
+	  la -la
+ 
+      - name: Upload command output
+        uses: actions/upload-artifact@v"
         with:
 	  path: console.log 
       
