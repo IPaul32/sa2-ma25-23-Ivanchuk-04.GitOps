@@ -16,7 +16,7 @@ jobs:
         run: |
           node hello.js > console.log
 	  touch /tmp/exit_scropt.log
-	  la -la
+	  ls -la
  
       - name: Upload command output
         uses: actions/upload-artifact@v"
