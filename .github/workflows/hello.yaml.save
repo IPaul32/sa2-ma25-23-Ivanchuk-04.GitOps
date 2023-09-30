@@ -1,0 +1,22 @@
+name: Test script
+on: 
+  push: 
+    branches:
+    -master
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Download node for Javascript and start script"
+        run: sudo apt update && sudo apt install -y nodejs
+      - run: echo "node has been installed" 
+      - run: |
+          node hello.js > console.log
+	  touch /tmp/exit_scropt.log
+	  la -la 
+      - name: "Upload command output"
+        uses: "actions/upload-artifact@v2"
+        with:
+	  path: console.log 
+      
