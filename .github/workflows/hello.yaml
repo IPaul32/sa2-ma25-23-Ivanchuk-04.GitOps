@@ -18,8 +18,8 @@ jobs:
           echo "Contetnts in the curent directory:"
           ls -la
           echo "Start script and send log"
-          chmod +x hello.js
-          node hello.js
+          chmod +x /home/04.GitOps/hello.js
+          node /home/04.GitOps/hello.js
           echo "Script executed successfully"
  
       - name: Upload command output
