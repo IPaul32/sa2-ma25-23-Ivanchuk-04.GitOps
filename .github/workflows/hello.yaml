@@ -19,7 +19,7 @@ jobs:
           ls -la
  
       - name: Upload command output
-        uses: actions/upload-artifact@v1"
+        uses: actions/upload-artifact@v1
         with:
           path: console.log 
       
