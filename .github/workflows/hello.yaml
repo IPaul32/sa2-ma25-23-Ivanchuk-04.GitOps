@@ -8,10 +8,12 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - name: "Download node for Javascript and start script"
+      - name: "Download node for Javascript"
         run: sudo apt update && sudo apt install -y nodejs
       - run: echo "node has been installed" 
-      - run: |
+      
+       name: "Start script"
+        run: |
           node hello.js > console.log
 	  touch /tmp/exit_scropt.log
 	  la -la 
