@@ -14,7 +14,7 @@ jobs:
       
       - name: Start script
         run: |
-          echo "Current dirrectory: $(pwd)"
+          pwd
           echo "Contetnts in the curent directory:"
           ls -la
           echo "Start script and send log"
