@@ -14,12 +14,12 @@ jobs:
       
       - name: Start script
         run: |
-          node hello.js >> console.log
+          node /home/04.GitOps/repo/hello.js >> console.log
 	  touch /tmp/exit_script.log
 	  ls -la
  
       - name: Upload command output
-        uses: actions/upload-artifact@v"
+        uses: actions/upload-artifact@v1"
         with:
 	  path: console.log 
       
