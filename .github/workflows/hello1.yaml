@@ -7,16 +7,15 @@ on:
 
 
 jobs:
-  process:
+  prepare:
     runs-on: ubuntu-latest
-
     steps:
-    -name: Install Node for JS
-    - run: sudo apr update && apt install node js    
+      - name: Install Node for JS
+        run: sudo apr update && apt install node js    
 
-    -name: Run JS Script
-    -run: node hello.js 
+      - name: Run JS Script
+        run: node hello.js 
     
 
-    - name: Output script
-    uses: actions/checkout@v2
+      - name: Output script
+        uses: actions/checkout@v2
