@@ -19,13 +19,10 @@ jobs:
           ls -la
           echo "Start script and send log"
           chmod +x hello.js
-          node hello.js > console.log
+          node hello.js
           echo "Script executed successfully"
-          touch /tmp/exit_script.log
-          ls -la
  
       - name: Upload command output
-        uses: actions/upload-artifact@v1
-        with:
-          path: console.log 
+        uses: actions/upload-artifact@v2
+
       
