@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download node for Javascript
-        run: sudo apt update && sudo apt install -y nodejs
+        run: sudo apt update && sudo apt install -y nodejs && sudo apt install -y npm
       - run: echo "node has been installed" 
       
       - name: Start script
