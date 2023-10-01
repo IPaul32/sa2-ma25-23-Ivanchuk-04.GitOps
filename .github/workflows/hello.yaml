@@ -27,7 +27,7 @@ jobs:
           echo "Script executed successfully"
  
       - name: Upload command output
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           path: outputjs.log
 

@@ -1,0 +1,22 @@
+{
+  "name": "calc-test.json",
+  "version": "1.0.0",
+  "description": "unit test of js calculator",
+  "main": "calc.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IPaul32/sa2-ma25-23-Ivanchuk-04.GitOps.git"
+  },
+  "author": "Ivanchuk Pavel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IPaul32/sa2-ma25-23-Ivanchuk-04.GitOps/issues"
+  },
+  "homepage": "https://github.com/IPaul32/sa2-ma25-23-Ivanchuk-04.GitOps#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
