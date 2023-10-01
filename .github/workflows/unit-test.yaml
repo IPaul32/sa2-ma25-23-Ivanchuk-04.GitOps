@@ -22,12 +22,8 @@ jobs:
         run: npm install 
 
       - name: Run test
-        run: npm test --outputFile=test.log
-      - run: echo "Script executed successfully"
+        run: npm test
+      - run: echo "Test passed"
  
-      - name: Upload command output
-        uses: actions/upload-artifact@v3
-        with:
-          path: test.log
 
       
