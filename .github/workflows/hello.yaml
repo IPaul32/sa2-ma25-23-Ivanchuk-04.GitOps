@@ -23,10 +23,12 @@ jobs:
           pwd
           ls -la
           chmod +x hello.js
-          node hello.js
+          node hello.js > outputjs.log
           echo "Script executed successfully"
  
       - name: Upload command output
         uses: actions/upload-artifact@v2
+        with:
+          path: outputjs.log
 
       
